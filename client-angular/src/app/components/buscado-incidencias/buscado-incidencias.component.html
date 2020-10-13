@@ -1,0 +1,28 @@
+<div class ="loading" *ngIf="!incidencias">
+    Cargando...
+</div>
+
+<div class="col-md-12">
+    <table class="table table-hover table-stripped" id="incidencias-list">
+        <tr>
+            <th>Nombre reportador</th>
+            <th>Apellidos reportador</th>
+            <th>Fecha reportada</th>
+            <th>Descripci&#243;n</th>
+        </tr>
+        <tr *ngFor="let incidencia of incidencias">
+            <td>
+                {{incidencia.user.name}}
+            </td>
+            <td>
+                {{incidencia.user.surname}}
+            </td>
+            <td>
+                {{incidencia.created_at | date:'yyyy-MM-dd'}}
+            </td>
+            <td>
+                {{incidencia.description}}
+            </td>
+        </tr>
+    </table>
+</div>

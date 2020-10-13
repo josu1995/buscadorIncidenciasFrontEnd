@@ -1,0 +1,18 @@
+label{
+    margin-left:22px ;
+    margin-right: 22px;
+    margin-top: 22px;
+}
+input{
+    margin-top: 22px;
+}
+#botonFecha{
+    margin-bottom: 10px;
+    margin-left: 22px;
+}
+#msjError{
+    margin-left: 30px;
+    color: red;
+    font-weight: bold;
+
+}
